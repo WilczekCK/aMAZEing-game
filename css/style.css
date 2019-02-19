@@ -1,0 +1,101 @@
+body{
+    background-image:url('../img/diagmonds.png');
+    background-color:rgba(255,0,0,0.9);
+    background-blend-mode: multiply;
+    overflow:hidden;
+    padding:10vh;
+}
+
+@media (min-width:1600px){
+    body{
+        padding:25vh;
+        transform:scale(1.5);
+    }
+}
+
+html{cursor: url(http://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important;}
+@font-face {
+    font-family: firstplay;
+    src: url(prstart.ttf);
+}
+
+
+.pointElement{
+    animation: pointElement 1.5s infinite linear;
+    background:#FFDF00;
+}
+
+.roundedLine{
+    background:aliceblue;
+    border-radius:33%;
+}
+
+
+.bosshealth:after{
+    content: 'BOSS HEALTH';
+    position:relative;
+    font-family:firstplay;
+    margin-left:55px;
+    
+}
+
+
+button{
+    background:tomato;
+    border:0;
+    margin:5px;
+}
+
+button:hover{
+    background:red;
+    cursor: url(http://cur.cursors-4u.net/others/oth-6/oth589.cur), auto !important;
+}
+
+button.levels{
+    
+}
+
+.deadZoneNoShadow{
+background: linear-gradient(232deg, #d20000, #ff4646, #ff0404);
+background-size: 600% 600%;
+ -webkit-animation: deadZoneBurn 2s both infinite;
+-moz-animation: deadZoneBurn 2s both infinite; 
+-o-animation: deadZoneBurn 2s both infinite;
+animation: deadZoneBurn 2s both infinite;
+}
+
+.deadZone{
+box-shadow:-0.5px 0.5px 40px black;
+background: linear-gradient(232deg, #d20000, #ff4646, #ff0404);
+background-size: 600% 600%;
+ -webkit-animation: deadZoneBurn 8s both infinite;
+-moz-animation: deadZoneBurn 8s both infinite; 
+-o-animation: deadZoneBurn 8s both infinite;
+animation: deadZoneBurn 8s both infinite;
+}
+
+.pin{
+    box-shadow:0 !important;
+}
+
+.clicktowin::after{
+    position:absolute;
+    content:' CLICK ';
+    font-family: firstplay;
+    text-align:center;
+    font-size:8px;
+    margin-top:20px;
+    margin-left:5px;
+}
+
+.resumeGame::before{
+    content:'Hover me to start';
+    position:fixed;
+    word-wrap: break-word;
+    margin-top:-55px;
+    max-width:90px;
+    margin-left:-15px;
+    font-size:13px;
+    font-family: firstplay;
+}
+
